@@ -110,3 +110,19 @@ dd { font-size: 1.05rem; }
   .section { padding: 68px 0; }
   .float-call { display: flex; }
 }
+
+.hours { border-collapse: collapse; margin-top: 6px; width: 100%; max-width: 320px; font-size: .98rem; }
+.hours th, .hours td { text-align: left; padding: 5px 0; font-weight: 400; border-bottom: 1px solid #ddd5c5; }
+.hours td { text-align: right; }
+.hours .closed td { color: var(--muted); }
+.hours tr.today th, .hours tr.today td { font-weight: 700; color: var(--text); }
+.status { font-weight: 600; font-size: .92rem; margin-bottom: 4px; }
+.status.open { color: #4d7a3a; }
+.status.shut { color: #9a4a3c; }
+
+.rating-line { margin-top: -6px; }
+.reviews { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 36px; }
+.review { background: var(--card); border-radius: var(--radius); padding: 30px 28px; box-shadow: 0 10px 30px rgba(37,34,27,.08); }
+.review p { font-family: var(--serif); font-size: 1.35rem; line-height: 1.4; margin: 12px 0 16px; }
+.review cite { font-style: normal; font-weight: 600; color: var(--accent-dark); }
+@media (max-width: 680px) { .reviews { grid-template-columns: 1fr; } }

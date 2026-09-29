@@ -26,6 +26,11 @@
       "addressRegion": "RM",
       "addressCountry": "IT"
     },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:30", "closes": "19:00"
+    }],
     "sameAs": ["https://www.instagram.com/obiettivo.unghie_fb/"],
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "9" }
   }
@@ -40,6 +45,7 @@
         <a href="#chi-siamo">Chi siamo</a>
         <a href="#servizi">Servizi</a>
         <a href="#lavori">Lavori</a>
+        <a href="#recensioni">Recensioni</a>
         <a href="#contatti">Contatti</a>
         <a href="tel:+393513408784" class="btn btn-small">Prenota</a>
       </nav>
@@ -131,6 +137,26 @@
       </div>
     </section>
 
+    <section id="recensioni" class="section alt">
+      <div class="wrap">
+        <p class="eyebrow center">Recensioni</p>
+        <h2 class="center">Cosa dicono le clienti</h2>
+        <p class="center rating-line"><span class="stars">★★★★★</span> <strong>5,0</strong> <span class="muted">su Google · 9 recensioni</span></p>
+        <div class="reviews">
+          <blockquote class="review">
+            <span class="stars">★★★★★</span>
+            <p>“Professionalità e gentilezza 💕 Mi sono trovata benissimo 😊🥰 Unghie al TOP!!!!”</p>
+            <cite>Valentina Pacciotti</cite>
+          </blockquote>
+          <blockquote class="review">
+            <span class="stars">★★★★★</span>
+            <p>“Professionalità e gentilezza 💕 Mi sono trovata benissimo 😊🥰 Unghie al TOP!!!!”</p>
+            <cite>Amy Pontelli</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
     <section class="section insta">
       <div class="wrap insta-inner">
         <div>
@@ -153,7 +179,18 @@
             <dt>Telefono</dt>
             <dd><a href="tel:+393513408784">351 340 8784</a></dd>
             <dt>Orari</dt>
-            <dd>Chiusura alle 19:00.<br><span class="muted">Si riceve su appuntamento: chiama per conoscere la disponibilità.</span></dd>
+            <dd>
+              <p class="status" id="status"></p>
+              <table class="hours">
+                <tr data-day="2"><th>Martedì</th><td>9:30 – 19:00</td></tr>
+                <tr data-day="3"><th>Mercoledì</th><td>9:30 – 19:00</td></tr>
+                <tr data-day="4"><th>Giovedì</th><td>9:30 – 19:00</td></tr>
+                <tr data-day="5"><th>Venerdì</th><td>9:30 – 19:00</td></tr>
+                <tr data-day="6"><th>Sabato</th><td>9:30 – 19:00</td></tr>
+                <tr data-day="0" class="closed"><th>Domenica</th><td>Chiuso</td></tr>
+                <tr data-day="1" class="closed"><th>Lunedì</th><td>Chiuso</td></tr>
+              </table>
+            </dd>
             <dt>Instagram</dt>
             <dd><a href="https://www.instagram.com/obiettivo.unghie_fb/" target="_blank" rel="noopener">@obiettivo.unghie_fb</a></dd>
           </dl>
@@ -191,6 +228,14 @@
       links.classList.remove('open');
       btn.setAttribute('aria-expanded', 'false');
     }));
+    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Rome' }));
+    const day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    const open = day >= 2 && day <= 6 && mins >= 570 && mins < 1140;
+    const row = document.querySelector('.hours tr[data-day="' + day + '"]');
+    if (row) row.classList.add('today');
+    const st = document.getElementById('status');
+    st.textContent = open ? '● Aperto ora · chiude alle 19:00' : '● Chiuso ora';
+    st.classList.add(open ? 'open' : 'shut');
   </script>
 </body>
 </html>
