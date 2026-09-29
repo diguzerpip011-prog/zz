@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Obiettivo Unghie di Francesca Bove</title>
+<meta name="description" content="Obiettivo Unghie di Francesca Bove: manicure, semipermanente, gel e nail art a Roma, in Viale di Villa Pamphili 77. Valutazione 5,0 su Google. Prenota su WhatsApp o chiama il 351 340 8784.">
+<meta name="theme-color" content="#A1214F">
+<meta property="og:title" content="Obiettivo Unghie di Francesca Bove">
+<meta property="og:description" content="Nail studio a Roma, Viale di Villa Pamphili 77. 5,0 su Google.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Figtree:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Obiettivo Unghie di Francesca Bove",
+  "telephone": "+39 351 340 8784",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Viale di Villa Pamphili, 77",
+    "postalCode": "00152",
+    "addressLocality": "Roma",
+    "addressRegion": "RM",
+    "addressCountry": "IT"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "9" },
+  "sameAs": ["https://www.instagram.com/obiettivo.unghie_fb/"]
+}
+</script>
+<style>
+/* Layout: left-aligned editorial hero with a viewfinder frame around a fan of polish swatches.
+   The frame is the one recurring motif, echoing "Obiettivo" (lens). Everything else stays quiet. */
+:root {
+  --bg: #F6F0F2;
+  --surface: #FFFFFF;
+  --ink: #2B1025;
+  --muted: #6B5566;
+  --accent: #A1214F;
+  --accent-ink: #FFFFFF;
+  --tint: #EBDDF0;
+  --line: #E3D3DB;
+  --shade-1: #8E1B45;
+  --shade-2: #E7B9AC;
+  --shade-3: #B9A2D6;
+  --shade-4: #C9302C;
+  --shade-5: #2B1025;
+  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #160A14; --surface: #22111E; --ink: #F5E9EF; --muted: #BBA3B3;
+    --accent: #E0577F; --accent-ink: #1A0A14; --tint: #2E1A33; --line: #3A2334;
+    --shade-5: #F5E9EF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #160A14; --surface: #22111E; --ink: #F5E9EF; --muted: #BBA3B3;
+  --accent: #E0577F; --accent-ink: #1A0A14; --tint: #2E1A33; --line: #3A2334;
+  --shade-5: #F5E9EF;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { width: 100%; max-width: 70rem; margin-inline: auto; padding-inline: 1.25rem; }
+.eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.icon { width: 1.15em; height: 1.15em; flex: none; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  min-height: 3rem; padding: 0.7rem 1.4rem;
+  font: 600 1rem/1.2 var(--font-body); text-decoration: none; cursor: pointer;
+  border-radius: 999px; border: 1.5px solid var(--accent);
+  background: var(--accent); color: var(--accent-ink);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--bg); }
+
+/* Header */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4rem; }
+.brand { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; text-decoration: none; line-height: 1.1; }
+.brand em { font-weight: 500; color: var(--accent); }
+.nav { display: flex; align-items: center; gap: 1.6rem; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav a:not(.btn):hover { color: var(--accent); }
+.nav .btn { min-height: 2.5rem; padding: 0.4rem 1.1rem; font-size: 0.95rem; }
+
+/* Hero */
+.hero { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.hero h1 { font-size: clamp(2.8rem, 7.2vw, 5.4rem); letter-spacing: -0.015em; }
+.hero h1 em { color: var(--accent); font-style: italic; font-weight: 500; }
+.hero .lead { margin-top: 1.4rem; max-width: 34rem; font-size: 1.2rem; color: var(--muted); }
+.hero .actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.rating { margin-top: 2rem; display: inline-flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; font-size: 0.95rem; color: var(--muted); }
+.rating strong { color: var(--ink); font-weight: 700; }
+.stars { display: inline-flex; gap: 2px; color: var(--accent); }
+.stars svg { width: 1.05rem; height: 1.05rem; }
+
+/* Viewfinder frame, the site's one signature detail */
+.frame {
+  --b: var(--ink); --l: 26px; --t: 2px;
+  position: relative; padding: 1.6rem 1rem 1rem;
+  background:
+    linear-gradient(var(--b), var(--b)) top left / var(--l) var(--t) no-repeat,
+    linear-gradient(var(--b), var(--b)) top left / var(--t) var(--l) no-repeat,
+    linear-gradient(var(--b), var(--b)) top right / var(--l) var(--t) no-repeat,
+    linear-gradient(var(--b), var(--b)) top right / var(--t) var(--l) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom left / var(--l) var(--t) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom left / var(--t) var(--l) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom right / var(--l) var(--t) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom right / var(--t) var(--l) no-repeat;
+}
+.frame-tag {
+  position: absolute; top: 0.55rem; left: 1rem; right: 1rem;
+  display: flex; justify-content: space-between;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+}
+.art svg { display: block; width: 100%; height: auto; }
+.art .nails { animation: focus-in 1s ease-out both; transform-origin: 50% 60%; }
+.art .ring { animation: ring-in 1s ease-out both; transform-origin: 210px 230px; }
+@keyframes focus-in { from { filter: blur(7px); } to { filter: blur(0); } }
+@keyframes ring-in { from { transform: scale(1.35); opacity: 0.2; } to { transform: scale(1); opacity: 1; } }
+.art text { font-family: var(--font-body); fill: var(--muted); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
+.art .ring-line { stroke: var(--accent); fill: none; }
+
+/* Sections */
+section { padding-block: clamp(3rem, 7vw, 5.5rem); }
+.section-head { display: grid; gap: 0.8rem; margin-bottom: 2.5rem; max-width: 40rem; }
+.section-head h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+
+/* Services: a shade-card list, not boxed cards */
+.services { background: var(--surface); border-block: 1px solid var(--line); }
+.service-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3.5rem; }
+.service-list li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.4rem 1.1rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
+.swatch { width: 2.6rem; height: 3.3rem; border-radius: 50% 50% 22% 22% / 38% 38% 14% 14%; position: relative; background: var(--c); grid-row: span 2; }
+.swatch::after { content: ""; position: absolute; left: 22%; top: 12%; width: 16%; height: 50%; border-radius: 99px; background: rgba(255, 255, 255, 0.4); }
+.service-list h3 { font-size: 1.5rem; }
+.service-list p { color: var(--muted); font-size: 1rem; }
+.note { margin-top: 2rem; color: var(--muted); font-size: 0.95rem; }
+
+/* Studio */
+.studio .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.studio h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+.studio h2 em { color: var(--accent); }
+.studio .body { display: grid; gap: 1rem; color: var(--muted); }
+.studio .body p:first-child { color: var(--ink); font-size: 1.2rem; }
+
+/* Reviews */
+.reviews { background: var(--tint); }
+.reviews .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+.score { font-family: var(--font-display); font-size: clamp(5rem, 14vw, 9rem); line-height: 0.9; font-weight: 500; color: var(--accent); }
+.reviews h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); }
+.reviews p { margin-top: 0.8rem; color: var(--muted); max-width: 34rem; }
+.reviews .stars { margin-top: 1rem; }
+.reviews .btn { margin-top: 1.4rem; }
+
+/* Instagram */
+.insta .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem 3rem; flex-wrap: wrap; }
+.insta h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.insta .handle { margin-top: 0.6rem; color: var(--muted); }
+.insta .handle strong { color: var(--ink); }
+
+/* Contacts */
+.contact { background: var(--surface); border-top: 1px solid var(--line); }
+.contact .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: stretch; }
+.info { display: grid; gap: 1.6rem; align-content: start; }
+.info h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+.info dl { margin: 0; display: grid; gap: 1.3rem; }
+.info dt { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.info dd { margin: 0.2rem 0 0; font-size: 1.2rem; }
+.phone-row { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+.phone-row a { font-weight: 600; text-decoration: none; font-variant-numeric: tabular-nums; }
+.copy { font: 500 0.85rem var(--font-body); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 0.3rem 0.8rem; cursor: pointer; min-height: 2rem; }
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+.info .actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.mapcard { display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; min-height: 22rem; }
+.mapcard > svg { width: 100%; height: 100%; min-height: 13rem; display: block; }
+.mapcard .street { stroke: var(--line); fill: none; stroke-linecap: round; }
+.mapcard .park { fill: var(--tint); }
+.mapcard .pin { fill: var(--accent); }
+.mapcard .pin-dot { fill: var(--accent-ink); }
+.mapcard .label { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--muted); }
+.mapcard address { font-style: normal; font-weight: 500; }
+
+/* Footer */
+.site-footer { padding-block: 2rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+.site-footer .wrap { display: flex; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; }
+.site-footer a { text-underline-offset: 3px; }
+
+/* Mobile action bar */
+.mobile-bar { display: none; }
+
+@media (max-width: 860px) {
+  .hero .wrap, .studio .wrap, .contact .wrap { grid-template-columns: minmax(0, 1fr); }
+  .service-list { grid-template-columns: minmax(0, 1fr); }
+  .nav a:not(.btn) { display: none; }
+  .art { max-width: 26rem; }
+}
+@media (max-width: 720px) {
+  body { padding-bottom: 5rem; }
+  .nav .btn { display: none; }
+  .reviews .wrap { grid-template-columns: minmax(0, 1fr); }
+  .mobile-bar {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom, 0px));
+    background: var(--surface); border-top: 1px solid var(--line);
+  }
+  .mobile-bar .btn { min-height: 2.9rem; padding-inline: 0.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .art .nails, .art .ring { animation: none; }
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Obiettivo Unghie, inizio pagina">Obiettivo <em>Unghie</em></a>
+    <nav class="nav" aria-label="Principale">
+      <a href="#servizi">Servizi</a>
+      <a href="#studio">Lo studio</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+      <a class="btn" href="tel:+393513408784">Chiama</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Nail studio · Roma · Villa Pamphili</p>
+        <h1 style="margin-top: 1rem">Unghie curate, <em>a fuoco.</em></h1>
+        <p class="lead">Manicure, semipermanente, gel e nail art nello studio di Francesca Bove, in Viale di Villa Pamphili a Roma.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/393513408784?text=Ciao%20Francesca%2C%20vorrei%20prenotare%20un%20appuntamento." target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Prenota su WhatsApp
+          </a>
+          <a class="btn ghost" href="tel:+393513408784">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+            351 340 8784
+          </a>
+        </div>
+        <p class="rating">
+          <span class="stars" role="img" aria-label="5 stelle su 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+          </span>
+          <span><strong>5,0</strong> su Google · 9 recensioni</span>
+        </p>
+      </div>
+
+      <div class="frame art" aria-hidden="true">
+        <div class="frame-tag"><span>Messa a fuoco</span><span>Set 05</span></div>
+        <svg viewBox="0 0 420 420" role="presentation">
+          <defs>
+            <clipPath id="nail"><path d="M0 31A31 31 0 0 1 62 31V104Q62 120 46 120H16Q0 120 0 104Z"/></clipPath>
+            <g id="nail-shape">
+              <g clip-path="url(#nail)">
+                <rect width="62" height="120" fill="currentColor"/>
+                <rect x="10" y="10" width="10" height="56" rx="5" fill="#fff" opacity="0.4"/>
+                <rect x="0" y="0" width="62" height="120" fill="none" stroke="#000" stroke-opacity="0.08"/>
+              </g>
+            </g>
+          </defs>
+          <g class="nails">
+            <g transform="translate(29 176) rotate(-14 31 120)" style="color: var(--shade-2)"><use href="#nail-shape"/></g>
+            <g transform="translate(104 136) rotate(-7 31 120)" style="color: var(--shade-3)"><use href="#nail-shape"/></g>
+            <g transform="translate(179 116)" style="color: var(--shade-1)"><use href="#nail-shape"/></g>
+            <g transform="translate(254 136) rotate(7 31 120)" style="color: var(--shade-4)"><use href="#nail-shape"/></g>
+            <g transform="translate(329 176) rotate(14 31 120)" style="color: var(--shade-5)"><use href="#nail-shape"/></g>
+          </g>
+          <g class="ring">
+            <circle class="ring-line" cx="210" cy="176" r="62" stroke-width="1.5" stroke-dasharray="3 5"/>
+            <path class="ring-line" d="M210 100v16M210 236v16M134 176h16M270 176h16" stroke-width="1.5"/>
+          </g>
+          <text x="210" y="392" text-anchor="middle">Bordeaux · Nude · Lilla · Rosso · Prugna</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servizi">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Servizi</p>
+        <h2>Tutto per mani e piedi, dalla cura alla finitura.</h2>
+      </div>
+      <!-- TODO: sostituire con l'elenco reale dei trattamenti e dei prezzi di Francesca. -->
+      <ul class="service-list">
+        <li style="--c: var(--shade-2)"><span class="swatch"></span><h3>Manicure</h3><p>Cura delle mani, forma e smalto classico.</p></li>
+        <li style="--c: var(--shade-1)"><span class="swatch"></span><h3>Semipermanente</h3><p>Colore brillante che dura settimane, con rimozione inclusa se richiesta.</p></li>
+        <li style="--c: var(--shade-3)"><span class="swatch"></span><h3>Ricostruzione in gel</h3><p>Allungamento e rinforzo per unghie forti e uniformi.</p></li>
+        <li style="--c: var(--shade-4)"><span class="swatch"></span><h3>Nail art</h3><p>Decorazioni, french, effetti e dettagli su misura.</p></li>
+        <li style="--c: var(--shade-5)"><span class="swatch"></span><h3>Pedicure</h3><p>Trattamento estetico dei piedi, con smalto o semipermanente.</p></li>
+        <li style="--c: var(--shade-2)"><span class="swatch"></span><h3>Refill e rimozione</h3><p>Manutenzione del set o rimozione delicata del gel.</p></li>
+      </ul>
+      <p class="note">Per conoscere i prezzi o scegliere il trattamento giusto, scrivi su WhatsApp o chiama.</p>
+    </div>
+  </section>
+
+  <section class="studio" id="studio">
+    <div class="wrap">
+      <h2>Lo studio di <em>Francesca Bove.</em></h2>
+      <div class="body">
+        <p>Obiettivo Unghie è uno studio dedicato alla cura di mani e piedi, in Viale di Villa Pamphili 77 a Roma.</p>
+        <p>Prenoti con un messaggio, scegli il trattamento e arrivi all'orario concordato. Il nome dice l'idea: l'attenzione resta sul dettaglio, unghia dopo unghia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="recensioni">
+    <div class="wrap">
+      <div class="score" aria-hidden="true">5,0</div>
+      <div>
+        <h2>Media 5,0 su Google, con 9 recensioni.</h2>
+        <span class="stars" role="img" aria-label="5 stelle su 5">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9Z"/></svg>
+        </span>
+        <p>Le clienti raccontano la loro esperienza direttamente su Google. Leggi le recensioni complete o lasciane una dopo il tuo appuntamento.</p>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Obiettivo+unghie+di+Francesca+Bove+Roma" target="_blank" rel="noopener">Leggi le recensioni su Google</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="insta" id="instagram">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Instagram</p>
+        <h2 style="margin-top: 0.8rem">Guarda i lavori più recenti.</h2>
+        <p class="handle"><strong>@obiettivo.unghie_fb</strong> · oltre 290 follower</p>
+      </div>
+      <a class="btn" href="https://www.instagram.com/obiettivo.unghie_fb/" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/></svg>
+        Apri Instagram
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contatti">
+    <div class="wrap">
+      <div class="info">
+        <h2>Vieni a trovarci.</h2>
+        <dl>
+          <div>
+            <dt>Indirizzo</dt>
+            <dd>Viale di Villa Pamphili, 77<br>00152 Roma RM</dd>
+          </div>
+          <div>
+            <dt>Telefono e WhatsApp</dt>
+            <dd class="phone-row">
+              <a href="tel:+393513408784" id="phone">351 340 8784</a>
+              <button class="copy" type="button" id="copy-phone">Copia il numero</button>
+            </dd>
+          </div>
+          <div>
+            <dt>Orari</dt>
+            <!-- TODO: inserire gli orari completi per ogni giorno. -->
+            <dd>Chiusura alle 19:00. Per l'orario del giorno che ti serve, scrivici.</dd>
+          </div>
+        </dl>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/393513408784?text=Ciao%20Francesca%2C%20vorrei%20prenotare%20un%20appuntamento." target="_blank" rel="noopener">Prenota su WhatsApp</a>
+          <a class="btn ghost" href="tel:+393513408784">Chiama</a>
+        </div>
+      </div>
+
+      <div class="frame mapcard">
+        <svg viewBox="0 0 420 260" role="img" aria-label="Mappa stilizzata: lo studio si trova in Viale di Villa Pamphili, vicino al parco di Villa Pamphili">
+          <path class="park" d="M0 0h230c-20 40-10 90-60 120s-90 70-170 60Z"/>
+          <path class="street" d="M-10 200C80 190 160 140 230 100S360 40 430 30" stroke-width="10"/>
+          <path class="street" d="M250 -10C260 60 280 140 300 270" stroke-width="6"/>
+          <path class="street" d="M0 240h430M120 270V150" stroke-width="4"/>
+          <text class="label" x="24" y="52">Villa Pamphili</text>
+          <g transform="translate(268 84)">
+            <path class="pin" d="M0 0c-13 0-22 9-22 21 0 16 22 34 22 34s22-18 22-34C22 9 13 0 0 0Z"/>
+            <circle class="pin-dot" cx="0" cy="20" r="7"/>
+          </g>
+        </svg>
+        <div>
+          <address>Viale di Villa Pamphili, 77, Roma</address>
+          <div style="margin-top: 1rem">
+            <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=Viale+di+Villa+Pamphili+77+00152+Roma" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Indicazioni stradali
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© Obiettivo Unghie di Francesca Bove · Viale di Villa Pamphili, 77 · 00152 Roma</span>
+    <a href="https://www.instagram.com/obiettivo.unghie_fb/" target="_blank" rel="noopener">@obiettivo.unghie_fb</a>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn" href="https://wa.me/393513408784?text=Ciao%20Francesca%2C%20vorrei%20prenotare%20un%20appuntamento." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn ghost" href="tel:+393513408784">Chiama</a>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-phone');
+  var phone = document.getElementById('phone');
+  if (!btn || !phone) return;
+  var label = btn.textContent;
+  function done(text) {
+    btn.textContent = text;
+    setTimeout(function () { btn.textContent = label; }, 1800);
+  }
+  btn.addEventListener('click', function () {
+    var text = phone.textContent.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done('Copiato'); }, function () {
+        var r = document.createRange(); r.selectNodeContents(phone);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        done('Numero selezionato');
+      });
+    } else {
+      var r = document.createRange(); r.selectNodeContents(phone);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      done('Numero selezionato');
+    }
+  });
+})();
+</script>
+</body>
+</html>
